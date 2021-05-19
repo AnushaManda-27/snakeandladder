@@ -45,6 +45,6 @@ public class snakeandladder {
             Reach = 0;
         }
      }
-      System.out.println("WINNING POSITION:" +Reach);
+      System.out.println("WINNING POSITION: " +Reach);
   }
 }

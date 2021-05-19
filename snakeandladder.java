@@ -10,6 +10,7 @@ public class snakeandladder {
       int Roll = 0;
       int Start = 0;
       int Reach = 0;
+      int count = 0;
       while (Reach < WINNING_POSITION ) {
       Reach++;
          int Value =(int) Math.floor((Math.random() * 6) + 1 );
@@ -22,6 +23,7 @@ public class snakeandladder {
              case NO_PLAY:
                            Position += 0;
              case LADDER:
+                        count++;
                        if((Position + Value) <= 100){
                            Position += Value;
                            Reach = Position;
@@ -45,6 +47,8 @@ public class snakeandladder {
             Reach = 0;
         }
      }
+      System.out.println("No of times ladder to win " +count);
+
       System.out.println("WINNING POSITION: " +Reach);
   }
 }
